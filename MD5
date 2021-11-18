@@ -1,0 +1,15 @@
+2e36b4fde961c95842975de9f9e21fd6 *DESCRIPTION
+1c8b59de96d70bff399f9c81f25d8227 *NAMESPACE
+c6062625b7506273dfc787de8fd31fb1 *NEWS.md
+df4a33f3210eee10e9dc992417da9d51 *R/adass-package.R
+3940afd74fc5ca2801430c3161580e53 *R/adass_functions.R
+c13c5376b8c659092285126b52927408 *R/plot_functions.R
+4575a638faaadeb5adf92f942615c9fb *README.md
+8111910592314f50bfb16f45c4cc616a *man/adass-package.Rd
+bfb7a7f930e3b2d43e3713167c0a16b0 *man/adass.fr.Rd
+2611e79acc1a579cad8fe97b96042b1e *man/adass.fr_eaass.Rd
+ba3bf2238dc6b25d4ca93465d26c2cbc *man/figures/mod_adass.png
+5417e8524585c005ae5257446dc9372b *man/plot.slasso.Rd
+934f79cd214353dcde63f2ddbd3e55b4 *man/simulate_data.Rd
+628364745798d0e00a92ea0c488876b0 *tests/testthat.R
+d58372c2fb48d5b34c7bacacbd99b076 *tests/testthat/test-adass_functions.R
