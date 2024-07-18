@@ -6,15 +6,15 @@
 \alias{adass-package}
 \title{Adaptive smoothing spline estimator for the function-on-function linear regression model}
 \description{
-Implements the adaptive smoothing spline estimator for the function-on-function linear regression model described in Centofanti et al. (2020) <arXiv:2011.12036>.
+Implements the adaptive smoothing spline estimator for the function-on-function linear regression model described in Centofanti et al. (2023) \doi{10.1007/s00180-022-01223-6}.
 }
 \details{
 \tabular{ll}{
 Package: \tab adass\cr
 Type: \tab Package\cr
-Version: \tab 1.0.0 \cr
-Date: \tab  2021-11-16 \cr
-License: \tab GPL-3\cr
+Version: \tab 1.0.1 \cr
+Date: \tab  2024-07-16 \cr
+License: \tab GPL (>= 3) + file LICENSE\cr
 }
 }
 \examples{
@@ -43,9 +43,9 @@ plot(mod_opt)
 }
 }
 \references{
-Centofanti, F., Lepore, A., Menafoglio, A., Palumbo, B., Vantini, S. (2020).
+Centofanti, F., Lepore, A., Menafoglio, A., Palumbo, B., Vantini, S. (2023).
 Adaptive Smoothing Spline Estimator for the Function-on-Function Linear Regression Model.
-\emph{arXiv preprint arXiv:2011.12036}.
+\emph{Computational Statistics 38(1), 191–216}.
 }
 \seealso{
 \code{\link{adass.fr}},  \code{\link{adass.fr_eaass}}

@@ -16,10 +16,9 @@
 #'
 #' @export
 #' @references
-#' @references
-#' Centofanti, F., Lepore, A., Menafoglio, A., Palumbo, B., Vantini, S. (2020).
+#' Centofanti, F., Lepore, A., Menafoglio, A., Palumbo, B., Vantini, S. (2023).
 #' Adaptive Smoothing Spline Estimator for the Function-on-Function Linear Regression Model.
-#' \emph{arXiv preprint arXiv:2011.12036}.
+#' \emph{Computational Statistics 38(1), 191–216}.
 #' @examples
 #' library(adass)
 #' data<-simulate_data("Scenario HAT",n_obs=100)
@@ -128,9 +127,9 @@ simulate_data<-function(scenario,n_obs=3000) {
 #'
 #' @export
 #' @references
-#' Centofanti, F., Lepore, A., Menafoglio, A., Palumbo, B., Vantini, S. (2020).
+#' Centofanti, F., Lepore, A., Menafoglio, A., Palumbo, B., Vantini, S. (2023).
 #' Adaptive Smoothing Spline Estimator for the Function-on-Function Linear Regression Model.
-#' \emph{arXiv preprint arXiv:2011.12036}.
+#' \emph{Computational Statistics 38(1), 191–216}.
 #' @examples
 #' library(adass)
 #' data<-simulate_data("Scenario HAT",n_obs=100)
@@ -203,9 +202,9 @@ adass.fr_eaass <-function(Y_fd, X_fd, basis_s, basis_t,
         vec_par<-lapply(seq(1,length(comb_list_eval[,1])),parr_func)
       }
       else{
-        if(.Platform$OS.type=="unix")
+        if(.Platform$OS.type=="unix"){
           vec_par<-parallel::mclapply(seq(1,length(comb_list_eval[,1])),parr_func,mc.cores = ncores)
-        else{
+        }else{
           cl <- parallel::makeCluster(ncores)
           parallel::clusterExport(cl, c( "comb_list_eval","X_fd","Y_fd","basis_s","basis_t",
                                          "beta_ders","beta_dert","X_fd_test","Y_fd_test",
@@ -321,9 +320,9 @@ adass.fr_eaass <-function(Y_fd, X_fd, basis_s, basis_t,
 #'
 #' @export
 #' @references
-#' Centofanti, F., Lepore, A., Menafoglio, A., Palumbo, B., Vantini, S. (2020).
+#' Centofanti, F., Lepore, A., Menafoglio, A., Palumbo, B., Vantini, S. (2023).
 #' Adaptive Smoothing Spline Estimator for the Function-on-Function Linear Regression Model.
-#' \emph{arXiv preprint arXiv:2011.12036}.
+#' \emph{Computational Statistics 38(1), 191–216}.
 #' @examples
 #' library(adass)
 #' data<-simulate_data("Scenario HAT",n_obs=100)

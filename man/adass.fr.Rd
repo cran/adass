@@ -91,9 +91,9 @@ mod_adass <-adass.fr(Y_fd, X_fd, basis_s = basis_s, basis_t = basis_t,
                      beta_dert = beta_der_eval_t,grid_eval_ders=grid_s,grid_eval_dert=grid_t )
 }
 \references{
-Centofanti, F., Lepore, A., Menafoglio, A., Palumbo, B., Vantini, S. (2020).
+Centofanti, F., Lepore, A., Menafoglio, A., Palumbo, B., Vantini, S. (2023).
 Adaptive Smoothing Spline Estimator for the Function-on-Function Linear Regression Model.
-\emph{arXiv preprint arXiv:2011.12036}.
+\emph{Computational Statistics 38(1), 191–216}.
 }
 \seealso{
 \code{\link{adass.fr_eaass}}

@@ -106,9 +106,9 @@ mod_adsm<-adass.fr_eaass(Y_fd,X_fd,basis_s,basis_t,
 
 }
 \references{
-Centofanti, F., Lepore, A., Menafoglio, A., Palumbo, B., Vantini, S. (2020).
+Centofanti, F., Lepore, A., Menafoglio, A., Palumbo, B., Vantini, S. (2023).
 Adaptive Smoothing Spline Estimator for the Function-on-Function Linear Regression Model.
-\emph{arXiv preprint arXiv:2011.12036}.
+\emph{Computational Statistics 38(1), 191–216}.
 }
 \seealso{
 \code{\link{adass.fr_eaass}}

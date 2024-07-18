@@ -5,13 +5,14 @@
 
 <!-- badges: start -->
 
-![R build
-status](https://github.com/unina-sfere/adass/workflows/R-CMD-check/badge.svg)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/adass)](https://CRAN.R-project.org/package=adass)
+[![R-CMD-check](https://github.com/unina-sfere/adass/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/unina-sfere/adass/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The package **adass** implements the adaptive smoothing spline (AdaSS)
 estimator for the function-on-function linear regression model proposed
-by Centofanti et al. (2020). The AdaSS estimator is obtained by the
+by Centofanti et al. (2023). The AdaSS estimator is obtained by the
 optimization of an objective function with two spatially adaptive
 penalties, based on initial estimates of the partial derivatives of the
 regression coefficient function. This allows the proposed estimator to
@@ -22,14 +23,16 @@ domain. The package comprises two main functions `adass.fr` and
 tuning parameters. The latter executes the evolutionary algorithm for
 the adaptive smoothing spline estimator (EAASS) algorithm to select the
 optimal tuning parameter combination as described in Centofanti et
-al. (2020).
+al. (2023).
 
 ## Installation
 
-<!-- You can install the released version of slasso from [CRAN](https://CRAN.R-project.org) with: -->
-<!-- ``` r -->
-<!-- install.packages("slasso") -->
-<!-- ``` -->
+You can install the released version of **adass** from
+[CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("adass")
+```
 
 The development version can be installed from
 [GitHub](https://github.com/) with:
@@ -44,7 +47,7 @@ devtools::install_github("unina-sfere/adass")
 This is a basic example which shows you how to apply the two main
 functions `adass.fr` and `adass.fr_eaass` on a synthetic dataset
 generated as described in the simulation study of Centofanti et
-al. (2020).
+al. (2023).
 
 We start by loading and attaching the **adass** package.
 
@@ -57,7 +60,6 @@ sets as follows.
 
 ``` r
 case<-"Scenario HAT"
-n_obs<-150
 data<-simulate_data(case,n_obs=10)
 X_fd <- data$X_fd
 Y_fd <- data$Y_fd
@@ -106,7 +108,7 @@ plot(mod_adass)
 
 # References
 
--   Centofanti, F., Lepore, A., Menafoglio, A., Palumbo, B., Vantini, S.
-    (2020). Adaptive Smoothing Spline Estimator for the
-    Function-on-Function Linear Regression Model. *arXiv preprint
-    arXiv:2011.12036*.
+- Centofanti, F., Lepore, A., Menafoglio, A., Palumbo, B., Vantini, S.
+  (2023). Adaptive Smoothing Spline Estimator for the
+  Function-on-Function Linear Regression Model. *Computational
+  Statistics 38(1), 191–216*.
